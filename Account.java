@@ -7,7 +7,7 @@ public class Account {
     }
     
 
-    public int Deposit (double dep) {
+    public double Deposit (double dep) {
         if (dep < 0) {
             System.out.println("\nSummai jābūt pozitīvai");
         } else {
@@ -29,6 +29,7 @@ public class Account {
     
     public double Display() {
         System.out.println(balance);
+        return balance; 
     }
 
 }
