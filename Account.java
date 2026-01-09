@@ -1,7 +1,8 @@
 public class Account {
-    private int balance;
+    private double balance;
 
-    public account (int bill) {
+
+    public Account (double bill) {
         balance = bill;
     }
     
@@ -26,5 +27,8 @@ public class Account {
         return balance;
     }
     
+    public double Display() {
+        System.out.println(balance);
+    }
 
 }

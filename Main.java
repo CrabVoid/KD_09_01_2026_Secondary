@@ -21,19 +21,19 @@ class Main {
                 case "1":
                     System.out.print("\nIevadiet pievienojamo summu: ");
                     double dep = Double.parseDouble(sc.nextLine());
-                    Account.Deposit(dep);
+                    obj.Deposit(dep);
                     break;
                 case "2":
                     System.out.print("\nIevadiet izņemto summu: ");
                     double wit = Double.parseDouble(sc.nextLine());
-                    Account.Withdraw(wit);
+                    obj.Withdraw(wit);
                     break;
                 case "3":
-                    // System.out.print("Konta balanss: " + balance);
-                    // break;
+                    System.out.print("Konta balanss: " + obj.Display());
+                    break;
                 case "4":
-                    // System.out.print("Visu labu!");
-                    // break;
+                    System.out.print("Visu labu!");
+                    break;
                 default:
                     System.out.print("Nederīga komanda!");
             }
